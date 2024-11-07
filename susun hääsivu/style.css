@@ -1,0 +1,280 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("media/tausta2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  /* Kuvan pysyminen paikallaan */
+  width: 100%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  position: relative;  /* Lisää tämä rivi */
+}
+
+header nav {
+  position: fixed; /* Kiinnittää navigaatiopalkin yläreunaan */
+  top: 0; /* Sijoittaa navigaation heti sivun yläreunaan */
+  width: 100%; /* Tekee navigaatiosta koko sivun levyisen */
+  z-index: 1000; /* Varmistaa, että navigaatio pysyy muiden elementtien päällä */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0); /* Hieman varjoa korostamaan */
+    background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Tummennuskerros (mustaa ja 35% läpinäkyvyyttä) */
+}
+
+.header-image {
+  background-image: url("path_to_your_image.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.header-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.35
+  ); /* Tummennuskerros (mustaa ja 35% läpinäkyvyyttä) */
+  z-index: 1; /* Pidetään tummennuskerros kuvan päällä */
+}
+
+h1 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding-top: 250px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: clamp(24px, 5vw, 200px);
+  transition: opacity 0.3s ease;  /* Lisää siirtymävaikutus */
+  width: 100%;  /* Tämä varmistaa, että h1 on täysin leveä ja voi olla keskitetty */
+  left: 50%;  /* Asettaa vasemman reunan keskelle */
+  transform: translateX(-50%);  /* Siirtää elementtiä vasemmalle puoliksi sen leveydestä */
+}
+
+/* Tämä säilyttää kuvan kiinteänä, mutta h1 muuttuu näkyväksi/poistuu scrollattaessa */
+header.scrolled h1 {
+  opacity: 0;  /* Hides the h1 */
+}
+
+#main-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main-menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#main-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.45
+  ); /* Tummennuskerros (mustaa ja 35% läpinäkyvyyttä) */
+}
+
+main {
+  padding: 20px;
+  color: #3b4c5e;
+}
+
+article {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  color: #436675;
+  font-size: clamp(24px, 5vw, 48px); /* Skaalaa 24px–48px välillä */
+}
+
+h3 {
+  color: #ccb881;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 25px;
+  margin-bottom: 50px; /* Asettaa 20px rakoa alareunaan */
+}
+
+h4 {
+  color: #ccb881;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+h5 {
+  color: #f0f0f0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+p {
+  color: #3b4c5e;
+  margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 40px; /* Asettaa 20px rakoa alareunaan */
+  margin-bottom: 20px; /* Asettaa 20px rakoa alareunaan */
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #ccb881;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #556b2f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+footer {
+  background-color: #;
+  color: white;
+  padding: 0px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+.blurred-image {
+  background-image: url("media/tausta2.jpg"); /* Kuva, joka on sama kuin headerissa */
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Korkeus voi olla tarpeen mukaan muokattavissa */
+  filter: blur(8px); /* Sumeus (voit säätää arvoa, esimerkiksi 5px-10px) */
+  margin: 20px 0; /* Voit lisätä väliä artikkelien ja kuvan väliin */
+}
+#countdown {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem; /* Pieni fonttikoko, mutta suurempi kuin aiemmin */
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4); /* Läpinäkyvä tummempi tausta */
+  padding: 10px; /* Vähennetty padding */
+  border-radius: 6px; /* Pienemmät pyöristetyt kulmat */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Keveämpi varjo */
+  max-width: 100%; /* Leveys voi venyä koko tilan verran */
+  margin: 20px auto; /* Keskitetty ja vähemmän väliä */
+  display: flex; /* Käytetään flexboxia */
+  justify-content: center; /* Kohdistaa sisällön keskelle */
+  align-items: center; /* Varmistaa, että sisältö on pystysuunnassa keskellä */
+  gap: 10px; /* Asettaa väliä elementtien välillä */
+}
+
+#countdown span {
+  font-size: 1.4rem; /* Pienempi fonttikoko yksiköille */
+  font-weight: bold;
+  padding: 6px 10px; /* Vähennetty padding */
+  background-color: #ff5c8e; /* Pinkki taustaväri */
+  border-radius: 5px; /* Pienemmät kulmat */
+  display: inline-block;
+  transition: all 0.3s ease; /* Animaatio hover-tilassa */
+}
+
+#countdown span.unit {
+  background-color: #1e1e1e; /* Tummempi tausta yksiköille */
+}
+
+#countdown span:hover {
+  background-color: #ff9ebd; /* Vaaleampi pinkki hover-tilassa */
+  transform: scale(1.1); /* Hiukan suurentaa hover-tilassa */
+}
+
+#countdown span.unit:hover {
+  background-color: #333; /* Tummempi tausta yksikköjen hover-tilassa */
+}
