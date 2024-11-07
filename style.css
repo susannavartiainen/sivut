@@ -6,6 +6,16 @@ body {
   padding: 0;
 }
 
+.hero-image {
+  position: fixed;  /* Kiinnittää kuvan paikoilleen */
+  top: 0;           /* Asettaa kuvan yläreunan näytön yläreunaan */
+  left: 0;          /* Asettaa kuvan vasemman reunan näytön vasempaan reunaan */
+  width: 100vw;     /* Kuva vie koko näytön leveyden */
+  height: 100vh;    /* Kuva vie koko näytön korkeuden */
+  object-fit: cover;/* Kuva täyttää koko alueen, mutta säilyttää mittasuhteet */
+  z-index: -1;      /* Varmistaa, että kuva on taustalla muiden elementtien alla */
+}
+
 header {
   background-image: url("tausta2.jpg"); /* Oletuskuva suuremmille näytöille */
   background-size: cover;
@@ -28,6 +38,14 @@ header {
     padding-top: 150px; /* Vähemmän ykköspaddingia pienillä näytöillä */
     font-size: clamp(18px, 4vw, 150px); /* Pienentää fonttikokoa pienemmillä näytöillä */
   }
+  .hero-image {
+    position: absolute; /* Kuvan sijoittaminen absoluuttisesti pienillä näytöillä */
+    top: 0;
+    left: 0;
+    width: 100%;      /* Kuvan leveys 100% näytöstä */
+    height: auto;     /* Kuva säilyttää mittasuhteensa */
+  }
+}
 }
 }
 
