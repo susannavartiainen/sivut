@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-image: url("media/tausta2.jpg");
+  background-image: url("tausta2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;  /* Kuvan pysyminen paikallaan */
