@@ -7,28 +7,27 @@ body {
 }
 
 header {
-  background-image: url("tausta2.jpg");
-  background-size: cover; /* Tämä takaa, että kuva täyttää koko alueen ja skaalautuu oikein */
-  background-position: center; /* Asettaa kuvan keskelle */
-  background-attachment: fixed;  /* Tämä pitää kuvan paikoillaan kun skrollaat (voit poistaa tämän jos haluat sen pois puhelimilla) */
-  width: 100%;
+  background-image: url("tausta2.jpg"); /* Oletuskuva suuremmille näytöille */
+  background-size: cover;
+  background-position: center;
   height: 550px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
-  overflow: hidden;
   position: relative;
 }
 
 @media only screen and (max-width: 768px) {
   header {
-    height: 300px; /* Pienentää headerin korkeutta pienemmille näytöille */
+    background-image: url("IMG_1537 (2).jpg"); /* Erilainen kuva pienille näytöille */
+    height: 300px; /* Voit myös säätää korkeutta pienemmille näytöille */
   }
   h1 {
-    font-size: clamp(20px, 5vw, 40px); /* Skaalaa h1-tekstiä pienemmillä näytöillä */
+    font-size: clamp(18px, 4vw, 150px); /* Pienentää fonttikokoa pienemmillä näytöillä */
   }
+}
 }
 
 header nav {
