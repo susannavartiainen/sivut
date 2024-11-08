@@ -33,12 +33,14 @@ header::before {
   z-index: 1;
 }
 
+/* Vaihda taustakuva pienillä näytöillä */
 @media (max-width: 768px) {
   header {
-    background-image: url("kuva_pieni.jpg"); /* Käytetään toista kuvaa pienillä näytöillä */
-    background-attachment: scroll;  /* Poistetaan kiinteys pienillä näytöillä */
+    background-image: url("kuva_pieni.jpg") !important; /* Käytetään toista kuvaa pienillä näytöillä */
+    background-attachment: scroll !important;  /* Poistetaan kiinteys pienillä näytöillä */
+    background-size: cover !important;
+    background-position: center !important;
   }
-}
 
 header nav {
   position: fixed; /* Kiinnittää navigaatiopalkin yläreunaan */
