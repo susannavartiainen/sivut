@@ -232,7 +232,7 @@ footer {
   font-weight: 200;
 }
 .blurred-image {
-  background-image: url("media/tausta2.jpg"); /* Kuva, joka on sama kuin headerissa */
+  background-image: url("tausta2.jpg"); /* Kuva, joka on sama kuin headerissa */
   background-size: cover;
   background-position: center;
   height: 300px; /* Korkeus voi olla tarpeen mukaan muokattavissa */
