@@ -80,7 +80,7 @@ header .header-image {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("media/tausta2.jpg");
+  background-image: url("tausta2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;  /* Kuvan pysyminen paikallaan */
@@ -260,7 +260,6 @@ input[type="submit"]:hover {
   width: 100%;
   height: 100%;
 }
-
 
 footer {
   background-color: #;
