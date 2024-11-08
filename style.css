@@ -41,6 +41,7 @@ header::before {
     background-size: cover !important;
     background-position: center !important;
   }
+}
 
 header nav {
   position: fixed; /* Kiinnittää navigaatiopalkin yläreunaan */
