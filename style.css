@@ -275,7 +275,7 @@ input[type="submit"]:hover {
 }
 
 footer {
-  background-color: #;
+  background-color: #333 ;   
   color: white;
   padding: 0px;
   text-align: center;
@@ -284,7 +284,9 @@ footer {
   width: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
+
 }
+
 .blurred-image {
   background-image: url("taustakuva_iso.jpg"); /* Kuva, joka on sama kuin headerissa */
   background-size: cover;
