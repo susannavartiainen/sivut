@@ -25,7 +25,7 @@ header {
 /* Tämä osa määrittelee taustakuvan vaihtamisen pienemmillä näytöillä (esim. puhelimet) */
 @media (max-width: 768px) {
   header {
-    background-image: url("media/tausta.jpg"); /* Käytetään toista kuvaa pienillä näytöillä */
+    background-image: url("tausta.jpg"); /* Käytetään toista kuvaa pienillä näytöillä */
   }
 }
 
