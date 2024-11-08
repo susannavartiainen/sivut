@@ -27,6 +27,7 @@ header {
   header {
     background-image: url("tausta.jpg"); /* Käytetään toista kuvaa pienillä näytöillä */
   }
+  background-attachment: scroll;  /* Poistetaan kiinteys pienillä näytöillä */
 }
 
 header nav {
@@ -66,6 +67,23 @@ header nav {
     0.35
   ); /* Tummennuskerros (mustaa ja 35% läpinäkyvyyttä) */
   z-index: 1; /* Pidetään tummennuskerros kuvan päällä */
+}
+
+header.scrolled h1 {
+  opacity: 0;  /* Piilottaa h1 */
+}
+
+/* Tämä säilyttää taustakuvan pysyvän ja estää sen liikkumisen, jos se ei toimi pienillä näytöillä */
+header .header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("media/tausta2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  /* Kuvan pysyminen paikallaan */
 }
 
 h1 {
