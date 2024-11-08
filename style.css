@@ -7,10 +7,6 @@ body {
 }
 
 header {
-  background-image: url("taustakuva_iso.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;  /* Kuvan pysyminen paikallaan */
   width: 100%;
   height: 100vh; /* Määrittää headerin korkeudeksi koko näkymän korkeus */
   display: flex;
@@ -33,27 +29,10 @@ header::before {
   z-index: 1;
 }
 
-header nav {
-  position: fixed; /* Kiinnittää navigaatiopalkin yläreunaan */
-  top: 0; /* Sijoittaa navigaation heti sivun yläreunaan */
-  width: 100%; /* Tekee navigaatiosta koko sivun levyisen */
-  z-index: 1000; /* Varmistaa, että navigaatio pysyy muiden elementtien päällä */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0); /* Hieman varjoa korostamaan */
-    background-color: rgba(
-    0,
-    0,
-    0,
-    0
-  ); /* Tummennuskerros (mustaa ja 35% läpinäkyvyyttä) */
-}
-
-/* Vaihda taustakuva pienillä näytöillä */
 @media (max-width: 768px) {
   header {
-    background-image: url("kuva_pieni.jpg") !important; /* Käytetään toista kuvaa pienillä näytöillä */
-    background-attachment: scroll !important;  /* Poistetaan kiinteys pienillä näytöillä */
-    background-size: cover !important;
-    background-position: center !important;
+    background-image: url("kuva_pieni.jpg"); /* Käytetään toista kuvaa pienillä näytöillä */
+    background-attachment: scroll;  /* Poistetaan kiinteys pienillä näytöillä */
   }
 }
 
@@ -83,7 +62,7 @@ header nav {
 }
 
 header.scrolled h1 {
-  opacity: 0;  /* Piilottaa h1 */
+  opacity: 0;  /* Piilottaa h1 TÄRKEÄ*/
 }
 
 /* Tämä säilyttää taustakuvan pysyvän ja estää sen liikkumisen, jos se ei toimi pienillä näytöillä */
@@ -114,37 +93,6 @@ h1 {
   transform: translateX(-50%);  /* Siirtää elementtiä vasemmalle puoliksi sen leveydestä */
 }
 
-/* Tämä säilyttää kuvan kiinteänä, mutta h1 muuttuu näkyväksi/poistuu scrollattaessa */
-header.scrolled h1 {
-  opacity: 0;  /* Hides the h1 */
-}
-
-#main-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#main-menu li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-#main-menu a {
-  text-decoration: none;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 5px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.45
-  ); /* Tummennuskerros (mustaa ja 35% läpinäkyvyyttä) */
-}
-
 main {
   padding: 20px;
   color: #3b4c5e;
@@ -157,17 +105,6 @@ article {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-}
-
-div {
-  text-align: center;
-}
-
-.article-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin: 10px 0;
 }
 
 h2 {
@@ -204,6 +141,8 @@ p {
   font-size: 20px;
 }
 
+
+/* RSVP form */
 form {
   max-width: 600px;
   margin: 0 auto;
@@ -243,20 +182,8 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #45a049;
 }
+/* RSVP form */
 
-.button {
-  display: inline-block;
-  padding: 8px 12px;
-  background-color: #556b2f;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #333;
-}
 
 #map {
   position: relative;
@@ -275,7 +202,6 @@ input[type="submit"]:hover {
 }
 
 footer {
-  background-color: #;   
   color: white;
   padding: 0px;
   text-align: center;
@@ -284,17 +210,8 @@ footer {
   width: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
-
 }
 
-.blurred-image {
-  background-image: url("taustakuva_iso.jpg"); /* Kuva, joka on sama kuin headerissa */
-  background-size: cover;
-  background-position: center;
-  height: 300px; /* Korkeus voi olla tarpeen mukaan muokattavissa */
-  filter: blur(8px); /* Sumeus (voit säätää arvoa, esimerkiksi 5px-10px) */
-  margin: 20px 0; /* Voit lisätä väliä artikkelien ja kuvan väliin */
-}
 #countdown {
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem; /* Pieni fonttikoko, mutta suurempi kuin aiemmin */
