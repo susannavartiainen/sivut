@@ -16,6 +16,10 @@ header {
   text-align: center;
   overflow: hidden;
   position: relative;  /* Lisää tämä rivi */
+  background-image: url("media/taustakuva_iso.jpg"); /* Oletustaustakuva isoille näytöille */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  /* Kiinteä tausta */
 }
 
 header::before {
