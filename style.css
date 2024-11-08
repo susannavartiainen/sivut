@@ -40,10 +40,18 @@ header h1 {
 }
 
 /* Pienten näyttöjen media-kysely */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   header {
-    background-image: url("kuva_pieni.jpg"); /* Pienempi kuva pienille näytöille */
-    background-attachment: scroll;  /* Kiinteys pois pieniltä näytöiltä */
+    background-image: url("media/kuva_pieni.jpg");
+    background-attachment: scroll; /* Ei kiinteä puhelimilla */
+  }
+}
+
+/* Tämä varmistaa vaihtumisen tableteille ja isoille puhelimille */
+@media (max-width: 768px) and (min-width: 601px) {
+  header {
+    background-image: url("media/kuva_pieni.jpg");
+    background-attachment: scroll;
   }
 }
 
