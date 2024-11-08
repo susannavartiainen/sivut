@@ -6,39 +6,20 @@ body {
   padding: 0;
 }
 
-
-/* Pienten näyttöjen media-kysely */
-@media (max-width: 600px) {
-  header {
-    background-image: url("kuva_pieni.jpg");
-    background-attachment: scroll; /* Ei kiinteä puhelimilla */
-  }
-}
-
-/* Tämä varmistaa vaihtumisen tableteille ja isoille puhelimille */
-@media (max-width: 768px) and (min-width: 601px) {
-  header {
-    background-image: url("kuva_pieni.jpg");
-    background-attachment: scroll;
-  }
-}
-
-
-
 header {
   width: 100%;
-  height: 100vh; /* Määrittää headerin korkeudeksi koko näkymän korkeus */
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
   overflow: hidden;
-  position: relative;  /* Lisää tämä rivi */
-  background-image: url("taustakuva_iso.jpg"); /* Oletustaustakuva isoille näytöille */
+  position: relative;
+  background-image: url("taustakuva_iso.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;  /* Kiinteä tausta */
+  background-attachment: fixed;
 }
 
 header::before {
@@ -48,230 +29,31 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.35); /* Tummennuskerros */
+  background-color: rgba(0, 0, 0, 0.35);
   z-index: 1;
 }
 
-/* Tekstin tyyli */
 header h1 {
   position: relative;
   z-index: 2;
 }
 
+/* Lisää kaikki muut tyylit tähän */
 
+...
 
-.header-image {
-  background-image: url("taustakuva_iso.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  position: relative;
+/* Pienten näyttöjen media-kysely */
+@media (max-width: 600px) {
+  header {
+    background-image: url("kuva_pieni.jpg");
+    background-attachment: scroll;
+  }
 }
 
-.header-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.35
-  ); /* Tummennuskerros (mustaa ja 35% läpinäkyvyyttä) */
-  z-index: 1; /* Pidetään tummennuskerros kuvan päällä */
-}
-
-header.scrolled h1 {
-  opacity: 0;  /* Piilottaa h1 TÄRKEÄ*/
-}
-
-/* Tämä säilyttää taustakuvan pysyvän ja estää sen liikkumisen, jos se ei toimi pienillä näytöillä */
-header .header-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("taustakuva_iso.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;  /* Kuvan pysyminen paikallaan */
-}
-
-h1 {
-  position: relative;
-  z-index: 2;
-  color: white;
-  text-align: center;
-  padding-top: 250px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 100;
-  font-size: clamp(24px, 10vw, 200px);
-  transition: opacity 0.3s ease;  /* Lisää siirtymävaikutus */
-  width: 100%;  /* Tämä varmistaa, että h1 on täysin leveä ja voi olla keskitetty */
-  left: 50%;  /* Asettaa vasemman reunan keskelle */
-  transform: translateX(-50%);  /* Siirtää elementtiä vasemmalle puoliksi sen leveydestä */
-}
-
-main {
-  padding: 20px;
-  color: #3b4c5e;
-}
-
-article {
-  margin-bottom: 20px;
-  padding: 15px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
-  color: #436675;
-  font-size: clamp(24px, 5vw, 48px); /* Skaalaa 24px–48px välillä */
-}
-
-h3 {
-  color: #ccb881;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-  font-size: 25px;
-  margin-bottom: 50px; /* Asettaa 20px rakoa alareunaan */
-}
-
-h4 {
-  color: #ccb881;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-}
-
-h5 {
-  color: #f0f0f0;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-}
-
-p {
-  color: #3b4c5e;
-  margin-bottom: 10px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-}
-
-
-/* RSVP form */
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin-top: 40px; /* Asettaa 20px rakoa alareunaan */
-  margin-bottom: 20px; /* Asettaa 20px rakoa alareunaan */
-}
-
-label {
-  font-weight: bold;
-  display: block;
-  margin-top: 10px;
-}
-
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-input[type="submit"] {
-  background-color: #ccb881;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-/* RSVP form */
-
-
-#map {
-  position: relative;
-  width: 100%;   /* Määrää kartan leveydeksi 100% säilön leveyttä */
-  height: 0;
-  padding-bottom: 56.25%;  /* 16:9 kuvasuhde, muutetaan tarvittaessa */
-  overflow: hidden;
-}
-
-#map iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-footer {
-  color: white;
-  padding: 0px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
-}
-
-#countdown {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.4rem; /* Pieni fonttikoko, mutta suurempi kuin aiemmin */
-  text-align: center;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.4); /* Läpinäkyvä tummempi tausta */
-  padding: 10px; /* Vähennetty padding */
-  border-radius: 6px; /* Pienemmät pyöristetyt kulmat */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Keveämpi varjo */
-  max-width: 100%; /* Leveys voi venyä koko tilan verran */
-  margin: 20px auto; /* Keskitetty ja vähemmän väliä */
-  display: flex; /* Käytetään flexboxia */
-  justify-content: center; /* Kohdistaa sisällön keskelle */
-  align-items: center; /* Varmistaa, että sisältö on pystysuunnassa keskellä */
-  gap: 10px; /* Asettaa väliä elementtien välillä */
-}
-
-#countdown span {
-  font-size: 1.4rem; /* Pienempi fonttikoko yksiköille */
-  font-weight: bold;
-  padding: 6px 10px; /* Vähennetty padding */
-  background-color: #ff5c8e; /* Pinkki taustaväri */
-  border-radius: 5px; /* Pienemmät kulmat */
-  display: inline-block;
-  transition: all 0.3s ease; /* Animaatio hover-tilassa */
-}
-
-#countdown span.unit {
-  background-color: #1e1e1e; /* Tummempi tausta yksiköille */
-}
-
-#countdown span:hover {
-  background-color: #ff9ebd; /* Vaaleampi pinkki hover-tilassa */
-  transform: scale(1.1); /* Hiukan suurentaa hover-tilassa */
-}
-
-#countdown span.unit:hover {
-  background-color: #333; /* Tummempi tausta yksikköjen hover-tilassa */
+/* Tablettien ja suurten puhelimien media-kysely */
+@media (max-width: 768px) and (min-width: 601px) {
+  header {
+    background-image: url("/kuva_pieni.jpg");
+    background-attachment: scroll;
+  }
 }
