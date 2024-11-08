@@ -16,7 +16,7 @@ header {
   text-align: center;
   overflow: hidden;
   position: relative;  /* Lisää tämä rivi */
-  background-image: url("media/taustakuva_iso.jpg"); /* Oletustaustakuva isoille näytöille */
+  background-image: url("taustakuva_iso.jpg"); /* Oletustaustakuva isoille näytöille */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;  /* Kiinteä tausta */
@@ -33,10 +33,17 @@ header::before {
   z-index: 1;
 }
 
+/* Tekstin tyyli */
+header h1 {
+  position: relative;
+  z-index: 2;
+}
+
+/* Pienten näyttöjen media-kysely */
 @media (max-width: 768px) {
   header {
-    background-image: url("kuva_pieni.jpg"); /* Käytetään toista kuvaa pienillä näytöillä */
-    background-attachment: scroll;  /* Poistetaan kiinteys pienillä näytöillä */
+    background-image: url("kuva_pieni.jpg"); /* Pienempi kuva pienille näytöille */
+    background-attachment: scroll;  /* Kiinteys pois pieniltä näytöiltä */
   }
 }
 
