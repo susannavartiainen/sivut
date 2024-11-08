@@ -42,7 +42,7 @@ header h1 {
 /* Pienten näyttöjen media-kysely */
 @media (max-width: 600px) {
   header {
-    background-image: url("media/kuva_pieni.jpg");
+    background-image: url("kuva_pieni.jpg");
     background-attachment: scroll; /* Ei kiinteä puhelimilla */
   }
 }
@@ -50,7 +50,7 @@ header h1 {
 /* Tämä varmistaa vaihtumisen tableteille ja isoille puhelimille */
 @media (max-width: 768px) and (min-width: 601px) {
   header {
-    background-image: url("media/kuva_pieni.jpg");
+    background-image: url("kuva_pieni.jpg");
     background-attachment: scroll;
   }
 }
