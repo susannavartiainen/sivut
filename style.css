@@ -6,11 +6,6 @@ body {
   padding: 0;
 }
 
-
-
-
-
-
 header {
   width: 100%;
   height: 100vh; /* Määrittää headerin korkeudeksi koko näkymän korkeus */
@@ -44,7 +39,21 @@ header h1 {
   z-index: 2;
 }
 
+/* Pienten näyttöjen media-kysely */
+@media (max-width: 600px) {
+  header {
+    background-image: url("kuva_pieni.jpg");
+    background-attachment: scroll; /* Ei kiinteä puhelimilla */
+  }
+}
 
+/* Tämä varmistaa vaihtumisen tableteille ja isoille puhelimille */
+@media (max-width: 768px) and (min-width: 601px) {
+  header {
+    background-image: url("kuva_pieni.jpg");
+    background-attachment: scroll;
+  }
+}
 
 .header-image {
   background-image: url("taustakuva_iso.jpg");
