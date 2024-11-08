@@ -33,12 +33,11 @@ header::before {
   z-index: 1;
 }
 
-/* Tämä osa määrittelee taustakuvan vaihtamisen pienemmillä näytöillä (esim. puhelimet) */
 @media (max-width: 768px) {
   header {
     background-image: url("tausta.jpg"); /* Käytetään toista kuvaa pienillä näytöillä */
+    background-attachment: scroll;  /* Poistetaan kiinteys pienillä näytöillä */
   }
-  background-attachment: scroll;  /* Poistetaan kiinteys pienillä näytöillä */
 }
 
 header nav {
