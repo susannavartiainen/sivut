@@ -1,6 +1,5 @@
 <!doctype html>
 <html class="no-js" lang="">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <div class="header-image">
@@ -64,14 +62,12 @@
             <h3>_________</h3>
             <h3>Pukukoodi</h3>
             <p>lorem ipsum</p>
-
             <h3>_________</h3>
             <h3>Lahjatoiveet</h3>
             <p>Meille on tärkeintä että saamme kaikki läheiset ihmiset juhlimaan kanssamme.</p>
             <p>Jos kuitenkin haluatte muistaa meitä, toivomme että kartutatte häälahjatiliämme, jonka aiomme käyttää seuraavaan yhteiseen seikkailuumme.</p>
             <h4>Tilinumero FIxx xxxx xxxx xxx xxx</h4>
         </article>
-
         <article id="yhteystiedot">
             <h2>YHTEYSTIEDOT</h2>
 			<h3>_________</h3>
@@ -80,29 +76,23 @@
             <h3>Niko p. 045 3185 608</h3>
             <h5><h/5>
 		</article>
-
 			</main>		
 			<footer><div id="countdown"></div></footer>
-
 				<script>
 					  // Hääpäivä
 					  const weddingDate = new Date("Sep 20, 2025 15:00:00").getTime();
-
 					  // Päivitä ajastinta sekunnin välein
 					  const timer = setInterval(() => {
 						const now = new Date().getTime();
 						const distance = weddingDate - now;
-
 						// Ajanlasku
 						const days = Math.floor(distance / (1000 * 60 * 60 * 24));
 						const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 						const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 						const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
 						// Näytä ajastin
 						document.getElementById("countdown").innerHTML = 
 						  days + " PÄIVÄÄ " + hours + " TUNTIA " + minutes + " MINUUTIA " + seconds + " SEKUNTIA";
-
 						// Pysäytä ajastin kun päivä on saavutettu
 						if (distance < 0) {
 						  clearInterval(timer);
@@ -114,7 +104,6 @@
 					window.addEventListener("scroll", function() {
 					  const header = document.querySelector('header');
 					  const h1 = document.querySelector('h1');
-
 					  // Tarkistaa, onko käyttäjä vierittänyt tarpeeksi
 					  if (window.scrollY > 100) {
 						header.classList.add("scrolled");  // Lisää 'scrolled' luokka headeriin
