@@ -17,7 +17,6 @@ header {
   text-align: center;
   overflow: hidden;
   position: relative;
-  background-image: url("taustakuva_iso.jpg"); /* Suurille näytöille */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Kiinteä tausta */
