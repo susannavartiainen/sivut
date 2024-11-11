@@ -40,18 +40,10 @@ header h1 {
 }
 
 /* Pienten näyttöjen media-kysely (max-leveys 600px) */
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   header {
     background-image: url("kuva_pieni.jpg"); /* Pienille näytöille */
     background-attachment: scroll; /* Ei kiinteä puhelimilla */
-  }
-}
-
-/* Tämä varmistaa vaihtumisen myös tableteille (600-768px) */
-@media (max-width: 768px) and (min-width: 601px) {
-  header {
-    background-image: url("kuva_pieni.jpg"); /* Vaihtaa taustakuvan */
-    background-attachment: scroll;
   }
 }
 
