@@ -41,7 +41,7 @@ header h1 {
 
 /* Pienten näyttöjen media-kysely (max-leveys 600px) */
 @media (max-width: 1200px) {
-  header {
+  .header-image  {
     background-image: url("kuva_pieni.jpg"); /* Pienille näytöille */
     background-attachment: scroll; /* Ei kiinteä puhelimilla */
   }
