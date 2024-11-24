@@ -196,10 +196,12 @@ input[type="submit"]:hover {
 /* RSVP form */
 
 #rsvp {
-  width: 50%;   /* Määrää kartan leveydeksi 100% säilön leveyttä */
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically */
+  height: 100vh;             /* Take full height of the viewport */
   text-align: center;
 }
-
 #map {
   position: relative;
   width: 100%;   /* Määrää kartan leveydeksi 100% säilön leveyttä */
