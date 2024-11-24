@@ -22,16 +22,6 @@ header {
   background-attachment: fixed; /* Kiinteä tausta */
 }
 
-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.35); /* Tummennuskerros */
-  z-index: 1;
-}
 
 /* Tekstin tyyli */
 header h1 {
@@ -59,37 +49,10 @@ header h1 {
   position: relative;
 }
 
-.header-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.35
-  ); /* Tummennuskerros (mustaa ja 35% läpinäkyvyyttä) */
-  z-index: 1; /* Pidetään tummennuskerros kuvan päällä */
-}
-
 header.scrolled h1 {
   opacity: 0;  /* Piilottaa h1 TÄRKEÄ*/
 }
 
-/* Tämä säilyttää taustakuvan pysyvän ja estää sen liikkumisen, jos se ei toimi pienillä näytöillä */
-header .header-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;  
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;  /* Kuvan pysyminen paikallaan */
-}
 
 h1 {
   position: relative;
