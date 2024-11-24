@@ -20,6 +20,14 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Kiinteä tausta */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.35
+  ); /* Tummennuskerros (mustaa ja 35% läpinäkyvyyttä) */
+  z-index: 1; /* Pidetään tummennuskerros kuvan päällä */
+
 }
 
 
