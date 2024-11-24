@@ -43,7 +43,7 @@ header h1 {
 @media (max-width: 600px) {
   .header-image {
     background-image: url("kuva_pieni.jpg"); /* Pienille näytöille */
-    background-attachment: fixed; /* Ei kiinteä puhelimilla */
+    background-attachment: scroll; /* Ei kiinteä puhelimilla */
     background-size: cover;  /* Varmistaa, että kuva peittää koko alueen */
     background-position: center; /* Kuva keskittyy oikein */
   }
