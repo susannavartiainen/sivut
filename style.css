@@ -197,6 +197,7 @@ input[type="submit"]:hover {
 
 #rsvp {
   width: 50%;   /* Määrää kartan leveydeksi 100% säilön leveyttä */
+  text-align: center;
 }
 
 #map {
