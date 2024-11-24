@@ -39,13 +39,16 @@ header h1 {
   z-index: 2;
 }
 
-/* Pienten näyttöjen media-kysely (max-leveys 600px) */
-@media (max-width: 1200px) {
-  .header-image  {
+/* Pienten näyttöjen media-kysely (max-leveys 1200px) */
+@media (max-width: 600px) {
+  .header-image {
     background-image: url("kuva_pieni.jpg"); /* Pienille näytöille */
     background-attachment: scroll; /* Ei kiinteä puhelimilla */
+    background-size: cover;  /* Varmistaa, että kuva peittää koko alueen */
+    background-position: center; /* Kuva keskittyy oikein */
   }
 }
+
 
 .header-image {
   background-image: url("taustakuva_iso.jpg");
