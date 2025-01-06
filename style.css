@@ -184,7 +184,7 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: center;   /* Center horizontally */
   align-items: center;       /* Center vertically */
-  height: 100vh;             /* Take full height of the viewport */
+  height: 75vh;             /* Take full height of the viewport */
   margin-top: 100px;
   margin-bottom: 200px;
   text-align: center;
