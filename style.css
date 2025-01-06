@@ -134,7 +134,7 @@ p {
 form {
   max-width: 100%; /* Lomake voi venyä koko leveydelle */
   margin: 0 auto;
-  padding: 15px;
+  padding: 50px;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 10px;
