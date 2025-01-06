@@ -186,7 +186,7 @@ input[type="submit"]:hover {
   align-items: center;       /* Center vertically */
   height: 100vh;             /* Take full height of the viewport */
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 500px;
   text-align: center;
 }
 #map {
