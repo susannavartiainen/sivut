@@ -70,7 +70,7 @@ h1 {
   color: white;
   text-align: center;
   padding-top: 250px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 100;
   font-size: clamp(24px, 10vw, 200px);
   transition: opacity 0.3s ease;  /* Lisää siirtymävaikutus */
