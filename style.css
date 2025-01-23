@@ -149,6 +149,11 @@ form {
   box-sizing: border-box; /* Varmistaa, että täyttö ja reunat lasketaan sisään */
 }
 
+#rsvp iframe {
+  height: auto; /* Mahdollistaa sisällön mukautumisen */
+  display: block;
+}
+
 label {
   font-weight: bold;
   display: block;
