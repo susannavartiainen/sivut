@@ -148,7 +148,6 @@ form {
   border: 1px solid #ccc;
   border-radius: 10px;
   box-sizing: border-box; /* Varmistaa, että täyttö ja reunat lasketaan sisään */
-  margin-bottom: 200px;
   margin-top: 200px;
 }
 
