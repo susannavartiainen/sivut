@@ -136,6 +136,7 @@ h9 {
   font-size: 20px;
   margin-bottom: 200px; 
   margin-top: 200px;
+  opacity: 0; /* Täysin läpinäkyvä */
 }
 
 
