@@ -69,7 +69,7 @@ h1 {
   z-index: 2;
   color: white;
   text-align: center;
-  padding-top: 400px;
+  padding-top: 350px;
   font-family: "Times New Roman", Times, serif;
   font-weight: 100;
   font-size: clamp(24px, 10vw, 200px);
